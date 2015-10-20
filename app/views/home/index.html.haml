@@ -1,41 +1,3 @@
-.navbar-wrapper
-  .container
-    %nav.navbar.navbar-inverse.navbar-static-top
-      .container
-        .navbar-header
-          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.navbar-brand{:href => "#"} Web开发工具箱
-        #navbar.navbar-collapse.collapse
-          %ul.nav.navbar-nav
-            %li.active
-              %a{:href => "#"} 主页
-            %li.dropdown
-              %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-                前端工具
-                %span.caret
-              %ul.dropdown-menu
-                / %li.dropdown-header HTML/CSS/Javascript
-                %li
-                  %a{:href => "#"} HTML转换HAML/HTML2HAML
-                %li
-                  %a{:href => "#"} Javascript压缩/Javascript Compressor
-                %li
-                  %a{:href => "#"} CSS压缩/CSS Compressor
-                %li
-                  %a{:herf => "#"} Javascript转换CoffeeScript/Js2Coffee
-                / %li.divider{:role => "separator"}
-                / %li.dropdown-header 图片
-                / %li
-                /   %a{:href => "#"} 图片在线压缩
-                / %li
-                /   %a{:href => "#"} 小图片拼合大图片/ CSS 
-/
-  Carousel
-  \==================================================
 #myCarousel.carousel.slide{"data-ride" => "carousel"}
   / Indicators
   %ol.carousel-indicators
@@ -135,8 +97,6 @@
     .col-md-5
       %img.featurette-image.img-responsive.center-block{:alt => "Generic placeholder image", "data-src" => "holder.js/500x500/auto"}/
   %hr.featurette-divider/
-  / /END THE FEATURETTES
-  / FOOTER
   %footer
     %p.pull-right
       %a{:href => "#"} Back to top
@@ -145,4 +105,3 @@
       %a{:href => "#"} Privacy
       \·
       %a{:href => "#"} Terms
-/ /.container
