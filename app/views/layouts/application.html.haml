@@ -7,4 +7,39 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .navbar-wrapper
+      .container
+        %nav.navbar.navbar-inverse.navbar-static-top
+          .container
+            .navbar-header
+              %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+                %span.sr-only Web开发工具箱
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.navbar-brand{:href => "#"} Web开发工具箱
+            #navbar.navbar-collapse.collapse
+              %ul.nav.navbar-nav
+                %li.active
+                  %a{:href => "#"} 主页
+                %li.dropdown
+                  %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                    前端工具
+                    %span.caret
+                  %ul.dropdown-menu
+                    / %li.dropdown-header HTML/CSS/Javascript
+                    %li
+                      %a{:href => "#"} HTML转换HAML/HTML2HAML
+                    %li
+                      %a{:href => "#"} Javascript压缩/Javascript Compressor
+                    %li
+                      %a{:href => "#"} CSS压缩/CSS Compressor
+                    %li
+                      %a{:herf => "#"} Javascript转换CoffeeScript/Js2Coffee
+                    / %li.divider{:role => "separator"}
+                    / %li.dropdown-header 图片
+                    / %li
+                    /   %a{:href => "#"} 图片在线压缩
+                    / %li
+                    /   %a{:href => "#"} 小图片拼合大图片/ CSS 
     = yield
